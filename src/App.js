@@ -16,6 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Arnold is Ыstudents
+          Hello babu
         </a>
       </header>
     </div>
