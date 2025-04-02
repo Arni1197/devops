@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Arnold is legend
+          Arnold is Ыstudents
         </a>
       </header>
     </div>
