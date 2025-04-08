@@ -6,9 +6,13 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
     return data; // returns the fetched data
   });
 
-export const getSlice = createSlice({
+ const getSlice = createSlice({
     name: 'GetSlice', 
-    initialState: [],
+    initialState: {
+      users: [],
+      status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+      error: null,
+    },
     reducers: {},
     extraReducers: (builder) => {
         builder
@@ -24,5 +28,6 @@ export const getSlice = createSlice({
             state.error = action.error.message;
           });
       },
-
 })
+
+export default getSlice.reducer;
